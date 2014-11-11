@@ -16,7 +16,7 @@ namespace WindowCart
         {
             try
             {
-                pidFile = Path.Combine(Environment.GetEnvironmentVariable("OPENSHIFT_DOTNET_DIR"), "run", "iishwc.pid");
+                pidFile = Path.Combine(Environment.GetEnvironmentVariable("OPENSHIFT_WindowCart_DIR"), "run", "iishwc.pid");
                 Environment.SetEnvironmentVariable("IISHWC_PID_FILE", pidFile);
                 switch (args[0])
                 {
@@ -72,12 +72,12 @@ namespace WindowCart
                 return;
             }
             Console.WriteLine("Startring the .NET cartridge");
-            string logDir = Path.Combine(Environment.GetEnvironmentVariable("OPENSHIFT_DOTNET_DIR"), "log");
+            string logDir = Path.Combine(Environment.GetEnvironmentVariable("OPENSHIFT_WindowCart_DIR"), "log");
             Directory.CreateDirectory(logDir);
             ProcessStartInfo pi = new ProcessStartInfo();
             pi.WindowStyle = ProcessWindowStyle.Hidden;
             pi.FileName = "cmd";
-            pi.Arguments = string.Format(@"/c {0}\bin\iishwc\start.bat  1>> {1}\stdout.log 2>> {1}\stderr.log", Environment.GetEnvironmentVariable("OPENSHIFT_DOTNET_DIR"), logDir);
+            pi.Arguments = string.Format(@"/c {0}\bin\iishwc\start.bat  1>> {1}\stdout.log 2>> {1}\stderr.log", Environment.GetEnvironmentVariable("OPENSHIFT_WindowCart_DIR"), logDir);
             Process process = Process.Start(pi);
             Console.WriteLine(process.Id);
             File.WriteAllText(pidFile, process.Id.ToString());
