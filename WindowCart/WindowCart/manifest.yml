@@ -1,0 +1,15 @@
+Name: rgendotnet
+Cartridge-Short-Name: RGenJ
+Display-Name: RGen Custom Cartridge
+Cartridge-Version: '0.0.1'
+Compatible-Versions: ['0.0.1']
+Cartridge-Vendor: rgensolutions
+Version: '1.0'
+Source-Url: https://github.com/RGenSolutions/ASPNetJ.git
+Description: "RGen Custom DotNet 4.5 Cartridge."
+Vendor: "RGen Solutions"
+Platform: "Windows"
+Categories:
+  - service
+  - web_framework
+  - windows
