@@ -1,5 +1,0 @@
-C:\ASPNetJ\WebApplication\WebApplication\bin\WebApplication.dll
-C:\ASPNetJ\WebApplication\WebApplication\bin\WebApplication.pdb
-C:\ASPNetJ\WebApplication\WebApplication\obj\Debug\WebApplication.csprojResolveAssemblyReference.cache
-C:\ASPNetJ\WebApplication\WebApplication\obj\Debug\WebApplication.dll
-C:\ASPNetJ\WebApplication\WebApplication\obj\Debug\WebApplication.pdb
